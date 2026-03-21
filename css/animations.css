@@ -1,0 +1,36 @@
+/* Custom keyframe animations for advanced micro-interactions */
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
+}
+
+.floating-icon {
+    animation: float 4s ease-in-out infinite;
+}
+
+.floating-icon-delayed {
+    animation: float 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+@keyframes pulse-glow {
+    0% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0.5); }
+    70% { box-shadow: 0 0 0 15px rgba(14, 165, 233, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(14, 165, 233, 0); }
+}
+
+.pulse-button {
+    animation: pulse-glow 2.5s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+/* Slide up and fade in wrapper */
+@keyframes advancedSlideUp {
+    0% { opacity: 0; transform: translateY(40px) scale(0.98); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.advanced-fade {
+    animation: advancedSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

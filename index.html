@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anudhairya Chaudhary | Portfolio</title>
+    <meta name="description" content="Personal portfolio of Anudhairya Chaudhary, an AI/ML enthusiast and Python & Java Developer.">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="global-bg"></div>
+    <header class="glass-header">
+        <nav>
+            <div class="logo" data-tilt data-tilt-scale="1.1" data-tilt-max="15">AC.</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#achievements">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <!-- Hero Section Shell -->
+        <section id="home" class="hero fade-in"></section>
+
+        <!-- About Section -->
+        <!-- About Section Shell -->
+        <section id="about" class="about fade-in"></section>
+
+        <!-- Skills Section -->
+        <!-- Skills Section Shell -->
+        <section id="skills" class="skills fade-in"></section>
+
+        <!-- Projects Section -->
+        <!-- Projects Section Shell -->
+        <section id="projects" class="projects fade-in"></section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements fade-in">
+            <h2 class="section-title">Achievements & Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card glass-card">
+                    <div class="cert-thumb">
+                        <div class="cert-preview-trigger" data-img-src="assets/images/daf70644-1.png" data-title="HackerRank Problem Solving (Basic)" style="width:100%; height:100%;">
+                            <img src="assets/images/daf70644-1.png" alt="HackerRank Certificate Preview">
+                            <div class="thumb-overlay">
+                                <i class="fa-solid fa-expand"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cert-info">
+                        <div class="cert-header">
+                            <i class="fa-brands fa-hackerrank text-accent"></i>
+                            <span class="cert-date">March 2026</span>
+                        </div>
+                        <h3>Problem Solving (Basic)</h3>
+                        <p class="platform text-accent">HackerRank</p>
+                        <p class="cert-desc">Successfully completed HackerRank Problem Solving certification demonstrating strong understanding of Data Structures and Algorithms.</p>
+                        <div class="cert-actions">
+                            <a href="https://www.hackerrank.com/certificates/78e71f96ac60" target="_blank" rel="noopener noreferrer" class="btn outline-btn btn-sm">Verify Certificate <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional certs can go here in the future -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact fade-in">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">Currently seeking active internship roles and collaborative engineering opportunities.</p>
+            <p>Whether you're exploring a specific technical inquiry, inquiring about my machine learning projects, or just want to connect, my inbox is open.</p>
+            
+            <div class="contact-container">
+                <form id="contact-form" action="https://formspree.io/f/xdkbazel" method="POST" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn submit-btn">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+                    <p id="form-status" class="form-status"></p>
+                </form>
+
+                <div class="contact-links">
+                    <a href="mailto:anudhairya3610@gmail.com" class="btn outline-btn"><i class="fa-solid fa-envelope"></i> Email Me</a>
+                    <a href="https://www.linkedin.com/in/anudhairya-chaudhary-ba91bb342" class="btn outline-btn" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Anudhairya Chaudhary. All rights reserved.</p>
+    </footer>
+
+    <!-- Certification Modal UI -->
+    <div id="cert-modal" class="modal glass-modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img" alt="Certificate Zoomed Preview">
+        <div id="modal-caption"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.0/vanilla-tilt.min.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
